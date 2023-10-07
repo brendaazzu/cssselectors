@@ -1,0 +1,81 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  position: absolute; 
+  width: 100%; 
+  height: 100vh; 
+  background: url('https://media.istockphoto.com/id/486303304/vector/white-squared-graph-paper-seamless.jpg?s=612x612&w=0&k=20&c=LyTGutolas_R9iOGHT_P6IgRn3XareL9dCnX8T3cGGs=') repeat center center fixed; 
+  background-size: inherit;
+  z-index: 1;
+}
+
+.background::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.80);
+  position: absolute;
+  z-index: 2;
+}
+
+.text {
+  color: rgb(4, 70, 86);
+  font-family: 'Edu NSW ACT Foundation', cursive;
+  font-size: 20px;
+  letter-spacing: 0.024em;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  z-index: 3;
+}
+
+.text h1,
+.text h2,
+.text p.note,
+.text ol {
+  margin: 10px 0;
+}
+
+.text li.note {
+  margin: 5px 0; 
+}
+
+ol {
+  list-style-position: inside;
+}
+
+p {
+  color: rgb(204, 11, 89);
+}
+
+li.note[value="1"] {
+  color: rgb(204, 11, 89);
+}
+
+.note {
+  font-size: 27px;
+  letter-spacing: 0.024em;
+  margin-bottom: 0.9em;
+}
+
+#id-selector-demo {
+  color: rgb(10, 130, 118)
+}
+
+li[value="4"] {
+  color: rgb(63, 21, 171);
+}
+
+
+
